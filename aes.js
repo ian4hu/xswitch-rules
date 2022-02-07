@@ -6,8 +6,15 @@ goldlog.spm_ab=["1a", "1a"]
 goldlog._$ = goldlog;
 goldlog.spm = {a: "1a", b: "1a"}
 goldlog.spm.data = goldlog.spm
+goldlog.aplus_pubsub = goldlog
 
 aplus_queue = []
+goldlog_queue = aplus_queue;
+
+aplus_queue.push = function () {};
+goldlog.nameStorage = {
+    _name: "nameStorage"
+}
 goldlog = new Proxy(goldlog, {
   get: (target, p) => {
       if (target[p]) {
