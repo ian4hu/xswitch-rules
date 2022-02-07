@@ -2,9 +2,10 @@ goldlog = {}
 goldlog.record = function() {}
 goldlog.setPageSPM = function() {}
 goldlog.sendPV = function() {}
-goldlog.spm_ab=["1", "1"]
+goldlog.spm_ab=["1a", "1a"]
 goldlog._$ = goldlog;
-goldlog.spm = {a: "1", b: "1"}
+goldlog.spm = {a: "1a", b: "1a"}
+goldlog.spm.data = goldlog.spm
 
 aplus_queue = []
 goldlog = new Proxy(goldlog, {
