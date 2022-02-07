@@ -10,7 +10,9 @@ goldlog = new Proxy(goldlog, {
       if (target[p]) {
           return target[p]
       }
-      return () => {};
+      var v = function () {};
+      v._name = p;
+      return v;
   },
   set: (target, p, v) => target[p]=v,
 })
