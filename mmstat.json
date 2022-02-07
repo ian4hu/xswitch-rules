@@ -1,0 +1,20 @@
+{
+    "proxy": [
+      [
+        "https://(.*\\.mmstat\\.com)/.*",
+        "https://cdn.jsdelivr.net/gh/ian4hu/xswitch-rules/aes.js", // http://127.0.0.1:3000/index.js
+      ],
+      [
+        "https://.*\\.snssdk\\.com/.*", // https://www.sample.com/path1/path2/index.js
+        "https://cdn.jsdelivr.net/gh/ian4hu/xswitch-rules/aes.js", // http://127.0.0.1:3000/index.js
+      ],
+      [
+        "https://.*\\.cnzz\\.com/stat\\.htm.*",
+        "https://cdn.jsdelivr.net/gh/ian4hu/xswitch-rules/aes.js", // http://127.0.0.1:3000/index.js
+      ],
+      [
+        "https://fourier.taobao.com/rp.*", 
+        "https://cdn.jsdelivr.net/gh/ian4hu/xswitch-rules/aes.js"
+      ]
+    ],
+  }
