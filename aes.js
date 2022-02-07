@@ -8,3 +8,4 @@ goldlog = new Proxy(goldlog, {
   set: (target, p, v) => console.log(p, v)
 })
 aplus = goldlog;
+goldlog.spm_ab="0"
