@@ -6,7 +6,12 @@ goldlog.spm_ab=["0", "0"]
 
 aplus_queue = []
 goldlog = new Proxy(goldlog, {
-  get: (target, p) => function(){},
+  get: (target, p) => {
+      if (target[p]) {
+          return target[p]
+      }
+      return () => {};
+  },
   set: (target, p, v) => target[p]=v,
 })
 aplus = goldlog;
