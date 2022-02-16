@@ -22,6 +22,7 @@ goldlog = new Proxy(goldlog, {
       }
       var v = function () {};
       v._name = p;
+      v.toString = function() { return v._name };
       return v;
   },
   set: (target, p, v) => target[p]=v,
